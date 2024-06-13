@@ -50,5 +50,20 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     });
     isEditable = false;
   
+
+
+    onFileSelected(event) {
+      const file = event.target.files[0];
+      if (file) {
+        // You can now do something with the file, like appending it to FormData or reading its contents
+        // For example, to set it as the value of a form control:
+        this.secondFormGroup.patchValue({
+          secondCtrl: file // Assuming you want to store the file in the 'secondCtrl' form control
+        });
+        // If you need to manually trigger validation or update the form state, you might need to call updateValueAndValidity()
+        this.secondFormGroup.get('secondCtrl').updateValueAndValidity();
+      }
+    }
+
     constructor(private _formBuilder: FormBuilder) {}
   }

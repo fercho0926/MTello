@@ -8,6 +8,11 @@ import { MatStepperModule} from '@angular/material/stepper';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
 import {MatDivider, MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+
+
+
 
 
 
@@ -25,8 +30,9 @@ import {MatDivider, MatDividerModule} from '@angular/material/divider';
     MatStepperModule,
     MatTooltipModule,
     MatCardModule,
-    MatDividerModule
-
+    MatDividerModule,
+    MatIconModule,
+    MatTableModule,
   ],
   exports: [
     MatButtonModule,
@@ -35,7 +41,9 @@ import {MatDivider, MatDividerModule} from '@angular/material/divider';
     MatStepperModule,
     MatTooltipModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule,
+    MatTableModule
   ]
 })
 export class MaterialModule { }

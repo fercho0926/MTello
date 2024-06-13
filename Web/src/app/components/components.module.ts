@@ -11,6 +11,7 @@ import { ReportingComponent } from './reporting/reporting.component';
 import { ReportingDetailsComponent } from './reporting/reporting-details/reporting-details.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MaterialModule } from '../material/material.module';
+import { DetailsByEmployeeComponent } from './reporting/details-by-employee/details-by-employee.component';
 
 
 
@@ -29,7 +30,8 @@ import { MaterialModule } from '../material/material.module';
     SidebarComponent,
     ChecksComponent,
     ReportingComponent,
-    ReportingDetailsComponent
+    ReportingDetailsComponent,
+    DetailsByEmployeeComponent
   ],
   exports: [
     FooterComponent,

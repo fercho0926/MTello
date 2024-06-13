@@ -12,20 +12,22 @@ import { ChecksComponent } from 'app/components/checks/checks.component';
 import { ReportingComponent } from 'app/components/reporting/reporting.component';
 import { ReportingDetailsComponent } from 'app/components/reporting/reporting-details/reporting-details.component';
 import { LoginComponent } from '../../auth/login/login.component';
+import { DetailsByEmployeeComponent } from 'app/components/reporting/details-by-employee/details-by-employee.component';
 
 export const AdminLayoutRoutes: Routes = [
 
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'checks',      component: ChecksComponent },
     { path: 'user-profile',   component: UserProfileComponent },
-    // { path: 'table-list',     component: TableListComponent },
-    // { path: 'typography',     component: TypographyComponent },
-    // { path: 'icons',          component: IconsComponent },
-    // { path: 'maps',           component: MapsComponent },
-    // { path: 'notifications',  component: NotificationsComponent },
+    { path: 'table-list',     component: TableListComponent },
+    { path: 'typography',     component: TypographyComponent },
+    { path: 'icons',          component: IconsComponent },
+    { path: 'maps',           component: MapsComponent },
+    { path: 'notifications',  component: NotificationsComponent },
     {path: 'user-management', component: UserManagementComponent},
     {path: 'reporting', component: ReportingComponent},
     {path: 'reporting-details/:reportingId', component: ReportingDetailsComponent},
+    {path: 'reporting-details-by-employee/:employeeId', component: DetailsByEmployeeComponent},
     {path: 'login', component: LoginComponent}
 
 

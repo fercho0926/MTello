@@ -2,9 +2,18 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header card-header-danger">
-                <h3 class="card-title">Reporte del LOTE  #</h3>
-                <p class="card-category">we can see one by one the records loaded in the system, that belong to the same group.
-                </p>
+                <h3 class="card-title">FileName report : 	Payment company XX - fileName :checks landers 13-06-2024</h3>
+                <p class="card-category">Total Number of Rows: 205</p>
+                <p class="card-category">Total Hours: 7,528.25</p>
+                <p class="card-category">Total Amount: 174,703.25</p>
+          
+        
+            </div>
+            <div>
+                <button mat-raised-button color="warn">Print All</button>
+
+
+
             </div>
             <div class="card-body">
 
@@ -31,11 +40,14 @@
                                         <td>{{item.RATE}}</td>
                                         <td>{{item.MEMO}}</td>
                                         <td class="td-actions text-right">
-                                            <button mat-raised-button type="button" matTooltip="View details" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon" (click)="details()">
+                                            <button mat-raised-button type="button" matTooltip="View details" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon" (click)="detailsByEmployee()">
                                                 <i class="material-icons">visibility</i>
                                             </button>
                                             <button mat-raised-button type="button" matTooltip="print" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
                                                 <i class="material-icons">print</i>
+                                            </button>
+                                            <button mat-raised-button type="button" matTooltip="void paycheck" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                                <i class="material-icons">delete</i>
                                             </button>
                                         </td>
                                     </tr>

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'; // Import ActivatedRoute
+import { ActivatedRoute, Router } from '@angular/router'; // Import ActivatedRoute
 
 @Component({
   selector: 'app-reporting-details',
@@ -11,7 +11,10 @@ export class ReportingDetailsComponent implements OnInit {
 
 
 
-constructor(private route: ActivatedRoute) { } // Inject ActivatedRoute
+constructor(private route: ActivatedRoute, private router: Router) { } // Inject ActivatedRoute
+
+
+
 
  reportingId: string; // Define a variable to store the reportingId
 
@@ -379,6 +382,15 @@ constructor(private route: ActivatedRoute) { } // Inject ActivatedRoute
     console.log(this.reportingId); // Log the reportingId to the console
   });
 }
+
+
+detailsByEmployee(): void {
+  console.log('detailsByEmployee')
+  let employeeId = 1;
+  this.router.navigate(['/reporting-details-by-employee', employeeId]);
+}
+
+
 }
 
 
