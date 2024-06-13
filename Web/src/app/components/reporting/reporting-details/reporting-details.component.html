@@ -1,0 +1,55 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h3 class="card-title">Reporte del LOTE  #</h3>
+                <p class="card-category">we can see one by one the records loaded in the system, that belong to the same group.
+                </p>
+            </div>
+            <div class="card-body">
+
+                <div >
+               
+                        <div class="card-body table-responsive">
+                            <table class="table table-hover">
+                                <thead class="text-warning">
+                                    <th>Date</th>
+                                    <th>NAME</th>
+                                    <th>TOTAL HOURS </th>
+                                    <th>TOTAL MONEY</th>
+                                    <th>RATE</th>
+                                    <th>MEMO</th>
+
+                                    <th>Actions</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of dummydata">
+                                        <td>{{item.DATE}}</td>
+                                        <td>{{item.NAME}}</td>
+                                        <td>{{item.TOTAL_HR}}</td>
+                                        <td>{{item.MONEY}}</td>
+                                        <td>{{item.RATE}}</td>
+                                        <td>{{item.MEMO}}</td>
+                                        <td class="td-actions text-right">
+                                            <button mat-raised-button type="button" matTooltip="View details" [matTooltipPosition]="'above'" class="btn btn-primary btn-link btn-sm btn-just-icon" (click)="details()">
+                                                <i class="material-icons">visibility</i>
+                                            </button>
+                                            <button mat-raised-button type="button" matTooltip="print" [matTooltipPosition]="'above'" class="btn btn-danger btn-link btn-sm btn-just-icon">
+                                                <i class="material-icons">print</i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                        
+                                </tbody>
+                            </table>
+                        </div>
+                
+                </div>
+
+         
+            </div>
+ 
+        </div>
+    </div>
+  </div>
+  

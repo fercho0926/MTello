@@ -8,6 +8,7 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { UserManagementModule } from './components/user-management/user-management.module';
+import { LoginComponent } from './auth/login/login.component';  
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { UserManagementModule } from './components/user-management/user-manageme
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    LoginComponent
 
   ],
   providers: [],
