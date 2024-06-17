@@ -13,6 +13,7 @@ import { ReportingComponent } from 'app/components/reporting/reporting.component
 import { ReportingDetailsComponent } from 'app/components/reporting/reporting-details/reporting-details.component';
 import { LoginComponent } from '../../auth/login/login.component';
 import { DetailsByEmployeeComponent } from 'app/components/reporting/details-by-employee/details-by-employee.component';
+import { CreateComponent } from 'app/components/checks/create/create.component';
 
 export const AdminLayoutRoutes: Routes = [
 
@@ -28,7 +29,8 @@ export const AdminLayoutRoutes: Routes = [
     {path: 'reporting', component: ReportingComponent},
     {path: 'reporting-details/:reportingId', component: ReportingDetailsComponent},
     {path: 'reporting-details-by-employee/:employeeId', component: DetailsByEmployeeComponent},
-    {path: 'login', component: LoginComponent}
+    {path: 'login', component: LoginComponent},
+    {path: 'create', component: CreateComponent}
 
 
 

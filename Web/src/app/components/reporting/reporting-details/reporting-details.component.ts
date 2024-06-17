@@ -390,6 +390,11 @@ detailsByEmployee(): void {
   this.router.navigate(['/reporting-details-by-employee', employeeId]);
 }
 
+print(): void {
+  let employeeId = 1;
+  this.router.navigate(['/create']);
+}
+
 
 }
 
