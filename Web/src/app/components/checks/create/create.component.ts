@@ -9,6 +9,16 @@ import html2canvas from 'html2canvas';
 })
 export class CreateComponent implements OnInit {
 
+
+  week1RegHours = 0.0;
+  week1OtHours = 0.0;
+  week2RegHours = 0.0;
+  week2OtHours = 0.0;
+  rate = 21;
+  regularPay = 840;
+  overtimePay = 0;
+  totalPay = 880.00;
+
   constructor() { }
 
   ngOnInit(): void {
