@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "exqu6N0gnfRYe7S3Q3eSfwzSDxpw7EMaT3graB4Zl8kZcTycBrrOz2uygWrjIBxY5Eeaicr7Hy0HLyDrc8rMvA==",
+  "dgSpecHash": "ca9mv/eWPaA=",
   "success": true,
   "projectFilePath": "C:\\WorkSpaces\\MTello\\Api\\Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mvasquez\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
+    "C:\\Users\\mvasquez\\.nuget\\packages\\itextsharp\\5.5.13.4\\itextsharp.5.5.13.4.nupkg.sha512",
     "C:\\Users\\mvasquez\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\mvasquez\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\mvasquez\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
@@ -11,5 +13,16 @@
     "C:\\Users\\mvasquez\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "C:\\Users\\mvasquez\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'iTextSharp 5.5.13.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "iTextSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
